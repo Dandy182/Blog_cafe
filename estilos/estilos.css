@@ -1,0 +1,152 @@
+:root{
+    --fuente_principal: 'Open Sans', sans-serif;
+    --fuente-secundaria: 'PT Sans', sans-serif;
+    --blanco:#fff;
+    --negro:#000;
+    --marron:#784D3C;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: var(--fuente_principal);
+}
+
+.contenedor{
+    width: 1000px;
+    margin:0 auto;
+    max-width: 95%;
+}
+
+a{
+    text-decoration:none;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 4.2rem;
+    margin: 0;
+    font-weight: 300;
+    font-family: var(--fuente-secundaria);
+    text-align: center;
+}
+
+h2{
+    font-size: 3.8rem;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+    margin:0;
+}
+
+
+span{
+    font-weight: 800;
+}
+
+
+/***************************************************** Encabezado */
+.site-header{
+    background-image:linear-gradient(90deg, rgba(3, 3, 3, 0.223), rgba(3, 3, 3, 0.223)), url(/src/img/banner.jpg);
+    height: 45rem;
+    background-position: center center;
+    background-size: cover;
+    color:var(--blanco);
+}
+
+.site-header__barra-Superior{
+    padding: 1rem;
+    text-align: center;
+}
+
+.navegacion a{
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    color:var(--blanco);
+}
+
+@media only screen and (min-width:768px){
+
+    .site-header__barra-Superior{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navegacion{
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+}
+
+.site-header__textoPresetacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+}
+
+.site-header__textoPresetacion p{
+    font-size: 1.5rem;
+    font-family: var(--fuente_principal);
+    text-align: center;
+}
+
+/***************************************************** blog */
+.entrada_blog{
+    padding:2rem 0;
+    margin:2rem 0;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.493);
+}
+
+.entrada_blog p{
+    text-align: justify;
+}
+
+.entrada_blog :last-of-type{
+    border-bottom: none;
+}
+
+/***************************************************** blog */
+
+.boton{
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.boton__primario{
+    background-color: var(--negro);
+    color:var(--blanco);
+    font-weight: 600;
+    font-family: var(--fuente-secundaria);
+    
+}
+
+.boton__primario:hover{
+   background-color: var(--marron);
+}

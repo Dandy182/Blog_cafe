@@ -2,10 +2,58 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog De Café</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./estilos/normalize.css">
+        <link rel="stylesheet" href="./estilos/estilos.css">
     </head>
     <body>
+        <header class="site-header">
+            <div class="site-header__barra-Superior contenedor">
+                <h1>Blog<span>DeCafé</span></h1>
+                <nav class="navegacion">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div><!--fin barra superior-->
 
+                <div class="site-header__textoPresetacion contenedor">
+                    <h2>Blog de café con consejos y cursos</h2>
+                    <p>Aprende de los expertos con las mejores recetas y consejos</p>
+                </div><!-- fin texto presentacion -->
+        </header>
+        <main class="contenedor contenedor__principal">
+            <div class="blog">
+                <h3>Nuestro Blog</h3>
+                <article class="entrada_blog">
+                    <picture >
+                        <source srcset="./src/img/blog1.webp" type="image/webp">
+                        <img src="./src/img/blog1.jpg">
+                    </picture>
+                    <h4 class="no-margin">Tipos de Grano de café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat non, suscipit neque et iste! Magnam quis id modi officia ad enim accusamus, minima accusantium, magni quod, eligendi corporis tenetur!</p>
+                    <a href="#" class="boton boton__primario">Leer Entrada</a>
+                </article>
+
+                <article class="entrada_blog">
+                    <picture>
+                        <source srcset="./src/img/blog2.webp" type="image/webp">
+                        <img src="./src/img/blog2.jpg">
+                    </picture>
+                    <h4 class="no-margin">Deliciosas Recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat non, suscipit neque et iste! Magnam quis id modi officia ad enim accusamus, minima accusantium, magni quod, eligendi corporis tenetur!</p>
+                    <a href="#" class="boton boton__primario">Leer Entrada</a>
+                </article>
+            </div>
+        </main>
+        <aside class="contenedor">
+
+        </aside>
     </body>
 
 </html>
