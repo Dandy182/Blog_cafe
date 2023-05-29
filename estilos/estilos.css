@@ -125,7 +125,8 @@ span{
 /***************************************************** blog */
 
 
-.entrada_blog{
+.entrada_blog,
+.cursos {
     padding:2rem 0;
     margin:2rem 0;
     border-bottom: 1px solid rgba(101, 101, 101, 0.493);
@@ -138,7 +139,7 @@ span{
         justify-content: space-between;
         gap:2rem;
     }
-    .entrada_blog:last-of-type{
+    .entrada_blog:last-of-type, .cursos:last-of-type{
         border-bottom: none;
     }
 }
@@ -148,9 +149,6 @@ span{
     text-align: justify;
 }
 
-.entrada_blog :last-of-type{
-    border-bottom: none;
-}
 
 /***************************************************** blog */
 
