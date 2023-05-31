@@ -197,6 +197,10 @@ ul li{
     border-bottom: 1px solid;
 }
 
+ul li:last-of-type{
+    border-bottom:none;
+}
+
 .boton__secundario{
     background-color: var(--marron);
     color: white;
@@ -260,6 +264,23 @@ ul li{
 
 /***************************************************** nosotros */
 
-.curso{
-    display: ;
+.infoCurso{
+   padding:1rem;
 }
+
+@media only screen and (min-width:768px){
+    .course{
+        display: flex;
+        gap:2rem;
+        align-items: flex-start;
+    }
+
+    .infoCurso{
+        flex-basis: 70%;
+    }
+
+    .course__img{
+        flex-basis: 30%;
+    }
+}
+
