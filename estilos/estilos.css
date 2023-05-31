@@ -27,13 +27,14 @@ body{
 }
 
 .contenedor{
-    width: 1200px;
+    width: 1000px;
     margin:0 auto;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 a{
     text-decoration:none;
+    color: none;
 }
 
 h1{
@@ -42,6 +43,7 @@ h1{
     font-weight: 300;
     font-family: var(--fuente-secundaria);
     text-align: center;
+    color:var(--blanco);
 }
 
 h2{
@@ -55,6 +57,7 @@ h2{
 h3{
     font-size: 3.2rem;
     font-family: var(--fuente-secundaria);
+    text-align: center;
 }
 
 h4{
@@ -65,6 +68,7 @@ h4{
 
 p{
     line-height: 2;
+    margin: 0;
 }
 
 span{
@@ -124,6 +128,10 @@ span{
 
 /***************************************************** blog */
 
+.contenedor__principal{
+    height: 100%;
+}
+
 
 .entrada_blog,
 .cursos {
@@ -137,7 +145,7 @@ span{
     .contenedor__principal{
         display: flex;
         justify-content: space-between;
-        gap:2rem;
+        gap:4rem;
     }
     .entrada_blog:last-of-type, .cursos:last-of-type{
         border-bottom: none;
@@ -148,9 +156,6 @@ span{
 .entrada_blog p{
     text-align: justify;
 }
-
-
-/***************************************************** blog */
 
 .boton{
     display: block;
@@ -171,6 +176,11 @@ span{
 }
 
 /***************************************************** aside */
+
+aside{
+    max-width: 200px;
+}
+
 ul{
     padding-left: 0;
 }
@@ -191,4 +201,51 @@ ul li{
 .boton__secundario:hover{
     background-color: var(--negro);
 
+}
+
+/***************************************************** footer */
+.site-footer{
+    background-color: var(--negro);
+    color:var(--blanco)
+
+}
+
+
+.site-footer__copy{
+    text-align: center;
+    margin: 0;
+    padding:1rem 0;
+}
+
+
+
+/***************************************************** nosotros */
+
+.nosotros h3{
+    text-transform: capitalize;
+}
+
+.nosotros__datos__img{
+    margin: 0 auto;
+}
+
+.nosotros__datos{
+    padding: 2rem 0;
+}
+
+@media only screen and (min-width:768px){
+    .nosotros__datos{
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+        align-items:top;
+    }
+    .nosotros__datos__img,
+    .nosotros__datos__info{
+        flex-basis: 50%;
+    }
+
+    .nosotros{
+        height: calc(100vh - 220px) ;
+    }
 }
