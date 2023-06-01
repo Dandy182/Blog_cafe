@@ -235,7 +235,9 @@ ul li:last-of-type{
 
 
 /***************************************************** nosotros */
-
+.nosotros{
+    min-height: calc(100vh - 168px);
+}
 .nosotros h3{
     text-transform: capitalize;
 }
@@ -262,7 +264,7 @@ ul li:last-of-type{
 }
 
 
-/***************************************************** nosotros */
+/***************************************************** cursos */
 
 .infoCurso{
    padding:1rem;
