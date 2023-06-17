@@ -255,7 +255,7 @@ ul li:last-of-type{
         display: flex;
         gap: 4rem;
         justify-content: space-between;
-        align-items:top;
+        align-items:center;
     }
     .nosotros__datos__img,
     .nosotros__datos__info{
