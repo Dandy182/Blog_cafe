@@ -76,6 +76,11 @@ span{
 
 
 /***************************************************** Encabezado */
+.webp .site-header{
+    background-image:linear-gradient(90deg, rgba(3, 3, 3, 0.223), rgba(3, 3, 3, 0.223)), url('../src/img/banner.webp')
+}
+
+
 .site-header{
     background-image:linear-gradient(90deg, rgba(3, 3, 3, 0.223), rgba(3, 3, 3, 0.223)), url('../src/img/banner.jpg');
     height: 45rem;
